@@ -1,0 +1,26 @@
+server:
+  port: 8003
+# 日志
+logging:
+  config: classpath:logback.xml
+#dubbo配置
+dubbo:
+  # 应用部分
+  application:
+    name: dubbo-provider
+#    register-mode: instance
+#    metadata-type: remote # 元数据类型
+  # 协议部分
+  protocol:
+    p1:
+      name: dubbo
+      port: 20883
+#    p2:
+#      name: rest
+#      port: 20894
+#    p3:
+#      name: tri
+#      port: 20895
+  # 注册部分
+  registry:
+    address: zookeeper://127.0.0.1:2181

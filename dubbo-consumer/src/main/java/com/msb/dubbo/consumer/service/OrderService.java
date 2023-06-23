@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
 @Service // 注意注解引入包名
 public class OrderService {
 
-    @DubboReference // 指定协议
+    @DubboReference(protocol = "tri") // 指定协议
     private IUserService iUserService;
 
     @Autowired

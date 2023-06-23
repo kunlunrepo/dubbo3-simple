@@ -13,7 +13,7 @@
 
     <groupId>com.msb</groupId>
     <artifactId>dubbo3-simple</artifactId>
-    <version>${dubbo3-simple.version}</version>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>

@@ -11,16 +11,16 @@ dubbo:
 #    register-mode: instance
 #    metadata-type: remote # 元数据类型
   # 协议部分
-  protocol:
+  protocols:
     p1:
       name: dubbo
       port: 20883
-#    p2:
-#      name: rest
-#      port: 20894
-#    p3:
-#      name: tri
-#      port: 20895
+    p2:
+      name: rest
+      port: 20894
+    p3:
+      name: tri
+      port: 20895
   # 注册部分
   registry:
     address: zookeeper://127.0.0.1:2181
